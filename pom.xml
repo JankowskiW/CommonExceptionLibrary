@@ -14,6 +14,7 @@
     <java.version>21</java.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <spring-web.version>6.1.12</spring-web.version>
+    <maven-compiler-plugin.version>3.13.0</maven-compiler-plugin.version>
   </properties>
 
   <dependencies>
@@ -29,6 +30,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
+        <version>${maven-compiler-plugin.version}</version>
         <configuration>
           <source>${java.version}</source>
           <target>${java.version}</target>
