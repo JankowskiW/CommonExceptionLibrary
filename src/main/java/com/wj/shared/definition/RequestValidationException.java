@@ -18,4 +18,9 @@ public class RequestValidationException extends RuntimeException {
         String message = String.format(NOT_FOUND_MESSAGE_TEMPLATE, entityName, fieldName, fieldValue);
         return new RequestValidationException(message);
     }
+
+    public static RequestValidationException notFound(String entityName, String fieldName, String fieldValue) {
+        String message = String.format(NOT_FOUND_MESSAGE_TEMPLATE, entityName, fieldName, fieldValue);
+        return new RequestValidationException(message);
+    }
 }

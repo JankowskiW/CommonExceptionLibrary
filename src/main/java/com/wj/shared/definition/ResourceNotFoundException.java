@@ -12,4 +12,9 @@ public class ResourceNotFoundException extends RuntimeException {
         String message = String.format(NOT_FOUND_MESSAGE_TEMPLATE, entityName, fieldName, fieldValue);
         return new ResourceNotFoundException(message);
     }
+
+    public static ResourceNotFoundException notFound(String entityName, String fieldName, String fieldValue) {
+        String message = String.format(NOT_FOUND_MESSAGE_TEMPLATE, entityName, fieldName, fieldValue);
+        return new ResourceNotFoundException(message);
+    }
 }
